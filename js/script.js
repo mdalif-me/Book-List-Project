@@ -3,6 +3,7 @@ let form = document.querySelector('#book-form');
 let booklist = document.querySelector('#book-list');
 
 
+
 // Book Class
 class Book {
     constructor(title, author, isbn) {
@@ -11,6 +12,9 @@ class Book {
         this.isbn = isbn;
     }
 }
+
+
+
 
 // UI Class
 class UI {
@@ -56,6 +60,10 @@ class UI {
     }
 }
 
+
+
+
+
 // Local Storage Class
 class Store {
     static getBooks() {
@@ -96,10 +104,16 @@ class Store {
     }
 }
 
+
+
+
+
 // Add Event Listener
 form.addEventListener('submit', newBook);
 booklist.addEventListener('click', removeBook);
 document.addEventListener('DOMContentLoaded', Store.displayBooks());
+
+
 
 
 // Define functions
